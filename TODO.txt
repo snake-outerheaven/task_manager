@@ -1,0 +1,13 @@
+Roadmap:
+
+
+Implement sorting algo for Manager class
+
+
+Implement persistence on file (Probably will create a DbHandler class or something)
+
+
+build TUI
+
+
+make everything modular so each piece may work independently, for ease of maintenance
