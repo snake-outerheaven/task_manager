@@ -1,3 +1,5 @@
+// entidade do domínio.
+
 public class ToDoTask {
 
     private int id;

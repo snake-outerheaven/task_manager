@@ -1,13 +1,8 @@
 Roadmap:
 
 
-Implement sorting algo for Manager class
+Implement sorting algo for Manager class -> DONE
 
+Design interfaces for allowing independent logic on the application core -> Done
 
-Implement persistence on file (Probably will create a DbHandler class or something)
-
-
-build TUI
-
-
-make everything modular so each piece may work independently, for ease of maintenance
+Implement those interfaces -> TODO NEXT

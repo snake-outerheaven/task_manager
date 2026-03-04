@@ -1,5 +1,9 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+
+// serviço de aplicação que rege a lógica de negócio
+// sobre as entidades do domínio.
 
 public class Manager {
 
@@ -14,8 +18,7 @@ public class Manager {
     }
 
     public boolean addTask(ToDoTask t) {
-        if (this.tasks.add(t)) return true;
-        else return false;
+        return this.tasks.add(t);
     }
 
     public boolean removeById(int id) {
@@ -28,7 +31,7 @@ public class Manager {
         return false;
     }
 
-    public ToDoTask searchByID(int id) {
+    public ToDoTask searchById(int id) {
         for (int i = 0; i < this.tasks.size(); i++) {
             if (this.tasks.get(i).getId() == id) {
                 ToDoTask t = this.tasks.get(i);
@@ -36,5 +39,9 @@ public class Manager {
             }
         }
         return null;
+    }
+
+    public void sortById() {
+        this.tasks.sort(Comparator.comparingInt(ToDoTask::getId)); // aprender melhores algoritmos do que bubble sort.
     }
 }
